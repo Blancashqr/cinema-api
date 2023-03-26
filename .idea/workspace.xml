@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7645171e-12a2-452c-bab6-48ae9c724771" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Lgn1PgpRm17eBnT0eDTZ4suIeV" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/blancasaez/Projects/cinema-api",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "8c33926904d58563a1ad0f137f01a437",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/blancash/cinemaapi" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.blancash.cinemaapi.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CinemaApiApplication">
+    <configuration name="CinemaApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.blancash.cinemaapi.CinemaApiApplication" />
+      <module name="cinema-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.blancash.cinemaapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CinemaServiceTest.checkAverageStaffSalary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cinema-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.blancash.cinemaapi.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.blancash.cinemaapi.service" />
+      <option name="MAIN_CLASS_NAME" value="com.blancash.cinemaapi.service.CinemaServiceTest" />
+      <option name="METHOD_NAME" value="checkAverageStaffSalary" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientServiceTest.checkTotalMoneySpent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cinema-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.blancash.cinemaapi.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.blancash.cinemaapi.service" />
+      <option name="MAIN_CLASS_NAME" value="com.blancash.cinemaapi.service.ClientServiceTest" />
+      <option name="METHOD_NAME" value="checkTotalMoneySpent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StaffServiceTest.checkCreateNewStaffCinemaFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cinema-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.blancash.cinemaapi.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.blancash.cinemaapi.service" />
+      <option name="MAIN_CLASS_NAME" value="com.blancash.cinemaapi.service.StaffServiceTest" />
+      <option name="METHOD_NAME" value="checkCreateNewStaffCinemaFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketServiceTest.checkBuyNewTicketMovieNotReleased" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cinema-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.blancash.cinemaapi.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.blancash.cinemaapi.service" />
+      <option name="MAIN_CLASS_NAME" value="com.blancash.cinemaapi.service.TicketServiceTest" />
+      <option name="METHOD_NAME" value="checkBuyNewTicketMovieNotReleased" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CinemaApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="cinema-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.blancash.cinemaapi.CinemaApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CinemaApiApplication" />
+        <item itemvalue="JUnit.CinemaServiceTest.checkAverageStaffSalary" />
+        <item itemvalue="JUnit.ClientServiceTest.checkTotalMoneySpent" />
+        <item itemvalue="JUnit.StaffServiceTest.checkCreateNewStaffCinemaFound" />
+        <item itemvalue="JUnit.TicketServiceTest.checkBuyNewTicketMovieNotReleased" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7645171e-12a2-452c-bab6-48ae9c724771" name="Changes" comment="" />
+      <created>1676301378177</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676301378177</updated>
+      <workItem from="1676301379692" duration="651000" />
+      <workItem from="1676315471693" duration="5507000" />
+      <workItem from="1676368748902" duration="62000" />
+      <workItem from="1676402629467" duration="3266000" />
+      <workItem from="1676834082958" duration="5157000" />
+      <workItem from="1676919369872" duration="4769000" />
+      <workItem from="1677351308008" duration="4351000" />
+      <workItem from="1677784413490" duration="4300000" />
+      <workItem from="1677870477166" duration="2620000" />
+      <workItem from="1678044096605" duration="3767000" />
+      <workItem from="1678217174045" duration="4347000" />
+      <workItem from="1678304771005" duration="3205000" />
+      <workItem from="1678649225207" duration="2244000" />
+      <workItem from="1678705006887" duration="50000" />
+      <workItem from="1678822156442" duration="4432000" />
+      <workItem from="1678909224328" duration="42000" />
+      <workItem from="1678909317672" duration="2887000" />
+      <workItem from="1679254521503" duration="370000" />
+      <workItem from="1679416285710" duration="700000" />
+      <workItem from="1679418441939" duration="1219000" />
+      <workItem from="1679516436487" duration="1329000" />
+      <workItem from="1679851939497" duration="9000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
