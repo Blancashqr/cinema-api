@@ -12,4 +12,6 @@ public interface StaffRepo extends CrudRepository<Staff, Long> {
 
   Staff findStaffById(int id);
 
+  List<Staff> findStaffByIdIn(List<Integer> staffIdList);
+
 }
