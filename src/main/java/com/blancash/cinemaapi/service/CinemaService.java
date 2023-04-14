@@ -119,6 +119,4 @@ public class CinemaService {
         return cinema;
 
     }
-
-
 }
