@@ -45,8 +45,6 @@ public class StaffService {
 
     Staff newStaff = staffRepo.save(staff);
 
-    List<Staff> cinemaStaff = cinema.getStaffList();
-    cinemaStaff.add(newStaff);
     log.info("Successfully created new staffId={} for cinemaId={}.", newStaff.getId(), cinemaId);
 
     return newStaff;

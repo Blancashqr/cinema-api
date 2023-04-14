@@ -4,6 +4,7 @@ import com.blancash.cinemaapi.models.Cinema;
 import com.blancash.cinemaapi.service.CinemaService;
 import com.blancash.cinemaapi.service.exception.EmptyMovieSetException;
 import com.blancash.cinemaapi.service.exception.EmptyStaffListException;
+import com.blancash.cinemaapi.service.exception.MovieNotFoundException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -147,6 +148,38 @@ public class CinemaControllerTest {
                 () -> cinemaController.createNewCinema(name, idList));
 
         assertEquals("List of staff is null or empty.", thrown.getMessage());
+
+    }
+
+    @Test
+    void checkAddNewMovie() throws MovieNotFoundException {
+
+        int movieId = 1;
+        int cinemaId = 2;
+
+        Cinema cinema = new Cinema();
+
+        doReturn(cinema).when(cinemaService).addNewMovie(anyInt(), anyInt());
+
+        cinemaController.addNewMovie(movieId, cinemaId);
+
+        verify(cinemaService).addNewMovie(movieId, cinemaId);
+
+    }
+
+    @Test
+    void checkAddNewMovieWhenMovieNotFound() throws MovieNotFoundException {
+
+        int movieId = 1;
+        int cinemaId = 2;
+
+        doThrow(new MovieNotFoundException("Movie with id=1 not found")).when(cinemaService)
+                .addNewMovie(anyInt(), anyInt());
+
+        MovieNotFoundException thrown = Assertions.assertThrows(MovieNotFoundException.class,
+                () -> cinemaController.addNewMovie(movieId, cinemaId));
+
+        assertEquals("Movie with id=1 not found", thrown.getMessage());
 
     }
 
