@@ -9,6 +9,7 @@ import com.blancash.cinemaapi.repos.StaffRepo;
 import com.blancash.cinemaapi.service.exception.EmptyMovieSetException;
 import com.blancash.cinemaapi.service.exception.EmptyStaffListException;
 import com.blancash.cinemaapi.service.exception.MovieNotFoundException;
+import com.blancash.cinemaapi.service.exception.StaffNotFoundException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -115,6 +116,26 @@ public class CinemaService {
 
         log.info("Successfully added movie with name={} to the movie set of cinema with name={}.",
                 movie.getName(), cinema.getName());
+
+        return cinema;
+
+    }
+
+    public Cinema addExistingStaffToCinema(int staffId, int cinemaId) throws StaffNotFoundException {
+        log.info("Adding staff with id={} to cinema with id={}.", staffId, cinemaId);
+
+        Staff staff = staffRepo.findStaffById(staffId);
+
+        if (staff == null) {
+            throw new StaffNotFoundException(String.format("Staff with id=%d not found.", staffId));
+        }
+        Cinema cinema = cinemaRepo.findCinemaById(cinemaId);
+
+        List<Staff> cinemaStaffList = cinema.getStaffList();
+        cinemaStaffList.add(staff);
+        cinemaRepo.save(cinema);
+
+        log.info("Successfully added staff with id={} to cinema with id={}.", staffId, cinemaId);
 
         return cinema;
 
