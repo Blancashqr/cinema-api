@@ -5,6 +5,7 @@ import com.blancash.cinemaapi.service.CinemaService;
 import com.blancash.cinemaapi.service.exception.EmptyMovieSetException;
 import com.blancash.cinemaapi.service.exception.EmptyStaffListException;
 import com.blancash.cinemaapi.service.exception.MovieNotFoundException;
+import com.blancash.cinemaapi.service.exception.StaffNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -55,6 +56,11 @@ public class CinemaController {
     @PostMapping("/cinema/new/movie/{movieId}/{cinemaId}")
     public Cinema addNewMovie(@PathVariable int movieId, @PathVariable int cinemaId) throws MovieNotFoundException {
         return cinemaService.addNewMovie(movieId, cinemaId);
+    }
+
+    @PostMapping("cinema/add/existing/staff/{staffId}/{cinemaId}")
+    public Cinema addExistingStaffToCinema(@PathVariable int staffId, @PathVariable int cinemaId) throws StaffNotFoundException {
+        return cinemaService.addExistingStaffToCinema(staffId, cinemaId);
     }
 
 

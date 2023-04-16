@@ -10,6 +10,7 @@ import com.blancash.cinemaapi.repos.StaffRepo;
 import com.blancash.cinemaapi.service.exception.EmptyMovieSetException;
 import com.blancash.cinemaapi.service.exception.EmptyStaffListException;
 import com.blancash.cinemaapi.service.exception.MovieNotFoundException;
+import com.blancash.cinemaapi.service.exception.StaffNotFoundException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -302,6 +303,41 @@ public class CinemaServiceTest {
                 () -> cinemaService.addNewMovie(movieId, cinemaId));
 
         assertEquals("Movie with id=14 not found.", thrown.getMessage());
+    }
+
+    @Test
+    void checkAddExistingStaffToCinema() throws StaffNotFoundException {
+
+        int staffId = 1;
+        int cinemaId = 2;
+        Staff staff1 = new Staff(2, "Lucia", 20000, new Cinema());
+        Cinema cinema = new Cinema(cinemaId, "name", new HashSet<>(), new ArrayList<>());
+
+        doReturn(staff1).when(staffRepo).findStaffById(anyInt());
+        doReturn(cinema).when(cinemaRepo).findCinemaById(anyInt());
+
+        Cinema result = cinemaService.addExistingStaffToCinema(staffId, cinemaId);
+
+        assertTrue(result.getStaffList().contains(staff1));
+
+        verify(cinemaRepo).save(result);
+
+    }
+
+    @Test
+    void checkAddExistingStaffToCinemaWhenStaffNotFound() {
+
+        int staffId = 1;
+        int cinemaId = 2;
+        Cinema cinema = new Cinema();
+
+        doReturn(null).when(staffRepo).findStaffById(anyInt());
+        doReturn(cinema).when(cinemaRepo).findCinemaById(anyInt());
+
+        StaffNotFoundException thrown = Assertions.assertThrows(StaffNotFoundException.class,
+                () -> cinemaService.addExistingStaffToCinema(staffId, cinemaId));
+
+        assertEquals("Staff with id=1 not found.", thrown.getMessage());
     }
 
 
